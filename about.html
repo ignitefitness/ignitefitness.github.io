@@ -1,41 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<!--Provides the title of the page, links style sheet to main page-->
-    <head>
-        <title>About</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css"> 
-    </head>
+<head>
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--This is information that web crawlers can use to berret present your site - think FB messenger miniatures-->
+    <meta name="author" content="Tomas Jaramillo and Drew Dorn">
+    <meta name="description" content="
+        Our names are Tomas Jaramillo and Drew Dorn and we created Ignite Fitness as a Year Long Project for the
+        2019-2020 school year. It is designed to help scholars learn how to use the gym equipment at Ignite. We hope
+        this helps all Ignite scholars who use the gym. Be safe and have fun while using this site!
+    ">
+    <meta property="og:image" content="Images/ignitelogo.jpeg">
+    <meta property="og:description" content="
+        Our names are Tomas Jaramillo and Drew Dorn and we created Ignite Fitness as a Year Long Project for the
+        2019-2020 school year. It is designed to help scholars learn how to use the gym equipment at Ignite. We hope
+        this helps all Ignite scholars who use the gym. Be safe and have fun while using this site!
+        ">
+    <meta property="og:title" content="About">
+    <meta property="og:locale " content="en_US">
+    <meta property="og:site_name " content="Ignite Fitness">
 
-<!--Center tag contains the entire body tag, so the entire body of index.html is centered unless specified by class or ID in CSS-->        
-    <center>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="structure.css">
+</head>
 
-<!--Everthing in the body is the main part of the page-->
-    <body>
-        
-<!--This is at the top of each page in our website. It is our project title surrounded by the Ignite logo on each side of it-->
-    <h1 style="text-align:center">
-    <img src="Images/ignitelogo.jpeg" align="middle" class="h1logo">
-     Ignite Fitness
-    <img src="Images/ignitelogo.jpeg" align="middle" class="h1logo"></h1>
+<body>
 
-<!--This is our dropdown menu to navigate the site-->
-     <center>   
-<div class="dropdown">
-  <button class="dropbtn">Pages▼</button>
-  <div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-  </div>
-</div>
-     </center>
+    <!--This is at the top of each page in our website. It is our project title surrounded by the Ignite logo on each side of it-->
+    <h1>Ignite Fitness</h1>
 
-<br>
-<br>
+    <!--This is our dropdown menu to navigate the site-->
+    <nav class="dropdown">
+        Pages
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+    <main>
+        <p>Our names are Tomas Jaramillo and Drew Dorn and we created Ignite Fitness as a Year Long Project for the
+            2019-2020 school year. It is designed to help scholars learn how to use the gym equipment at Ignite. We hope
+            this helps all Ignite scholars who use the gym. Be safe and have fun while using this site!</p>
+    </main>
+</body>
 
-     <p>Our names are Tomas Jaramillo and Drew Dorn and we created Ignite Fitness as a Year Long Project for the 2019-2020 school year. It is designed to help scholars learn how to use the gym equipment at Ignite. We hope this helps all Ignite scholars who use the gym. Be safe and have fun while using this site!</p>   
-    </body>
-</center>
-    
 </html>
