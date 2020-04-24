@@ -1,210 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
-<!--Provides the title of the page, links style sheet to main page-->
+<html>
 
-<head>
-    <title> Ignite Fitness</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--This is information that web crawlers can use to berret present your site - think FB messenger miniatures-->
-    <meta name="author" content="Tomas Jaramillo and Drew Dorn">
-    <meta name="description" content="
-            Our names are Tomas Jaramillo and Drew Dorn and we created Ignite Fitness as a Year Long Project for the
-            2019-2020 school year. It is designed to help scholars learn how to use the gym equipment at Ignite. We hope
-            this helps all Ignite scholars who use the gym. Be safe and have fun while using this site!
-        ">
-    <meta property="og:image" content="Images/ignitelogo.jpeg">
-    <meta property="og:description" content="
-        Our names are Tomas Jaramillo and Drew Dorn and we created Ignite Fitness as a Year Long Project for the
-        2019-2020 school year. It is designed to help scholars learn how to use the gym equipment at Ignite. We hope
-        this helps all Ignite scholars who use the gym. Be safe and have fun while using this site!
-        ">
-    <meta property="og:title" content="Ignite Fitness">
-    <meta property="og:locale " content="en_US">
-    <meta property="og:site_name " content="Ignite Fitness">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="structure.css">
-</head>
+<style>
+    img {
+  opacity: 0.7;
+}
+</style>
+
+<!--Provides the title of the page, links style sheet to main page-->
+    <head>
+        <title> Ignite Fitness</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+
+<!--Center tag contains the entire body tag, so the entire body of index.html is centered unless specified by class or ID in CSS-->        
+    <center>
 
 <!--Everthing in the body is the main part of the page-->
+    <body>
+        
+<!--This is at the top of each page in our website. It is our project title surrounded by the Ignite logo on each side of it-->
+    <h1 style="text-align:center">
+    <img src="Images/ignitelogo.jpeg" align="middle" class="h1logo">
+     Ignite Fitness
+    <img src="Images/ignitelogo.jpeg" align="middle" class="h1logo"></h1>
 
-<body>
-    <!--This is at the top of each page in our website. It is our project title surrounded by the Ignite logo on each side of it-->
-    <h1>Ignite Fitness</h1>
+<!--This is our dropdown menu to navigate the site-->
+     <center>   
+<div class="dropdown">
+  <button class="dropbtn">Pages▼</button>
+  <div class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </div>
+</div>
+     </center>
 
-    <!--This is our dropdown menu to navigate the site-->
-    <nav class="dropdown">
-        Pages
-        <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-        </div>
-    </nav>
+<!--Creates space between the dropdown menu and our main table-->
+<br>
+<br>
 
-    <main>
+<!--We used a table to display the images. We created a new cell and row for each piece of equipment-->
+    <table id="main_table" border="0">
 
-        <div class="equipment">
-            <div class="container">
-                <a href="Equipment_Pages/benchpress.html">
-                    <img src="Images/benchpress.jpg">
-                    <div class="centered">Bench Press</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/dumbbells.html">
-                    <img src="Images/dumbbells.jpg">
+        <tr class="container">
+                    <td>
+                       <div class="container">
+                        <a href="Equipment_Pages/benchpress.html">
+                            <img src="Images/benchpress.jpg" height=250 width=250>
+                        </a>
+                        <div class="centered">Bench Press</div>
+                        </div>
+                    </td>
+                
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/dumbbells.html">
+                        <img src="Images/dumbbells.jpg" height=255 width=250>
+                    </a>
                     <div class="centered">Dumbbells</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/barbells.html">
-                    <img src="Images/barbells.JPG">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/barbells.html">
+                        <img src="Images/barbells.JPG" height=250 width=250>
+                    </a>
                     <div class="centered">Barbells</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/adductor_machine.html">
-                    <img src="Images/adductor_machine.JPG">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/adductor_machine.html">
+                        <img src="Images/adductor_machine.JPG" height=250 width=250>
+                    </a>
                     <div class="centered">Adductor Machine</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/bicep+tricep_machine.html">
-                    <img src="Images/bicep+tricep_machine.JPG">
+                    </div>
+                </td>
+                
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/bicep+tricep_machine.html">
+                        <img src="Images/bicep+tricep_machine.JPG" height=320 width=250>
+                    </a>
                     <div class="centered">Bicep and Tricep Machine</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/BOSU_ball.html">
-                    <img src="Images/BOSU_ball.JPG">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/BOSU_ball.html">
+                        <img src="Images/BOSU_ball.JPG" height=275 width=250>
+                    </a>
                     <div class="centered">BOSU Balls</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/chest_press.html">
-                    <img src="Images/chest_press.jpg">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/chest_press.html">
+                        <img src="Images/chest_press.jpg" height=295 width=250>
+                    </a>
                     <div class="centered">Chest Press</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/elliptical.html">
-                    <img src="Images/Elliptical.jpg">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/elliptical.html">
+                        <img src="Images/Elliptical.jpg" height=300 width=250>
+                    </a>
                     <div class="centered">Elliptical</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/exercise_bike.html">
-                    <img src="Images/excercise_bike.JPG">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/exercise_bike.html">
+                        <img src="Images/excercise_bike.JPG" height=325 width=250>
+                    </a>
                     <div class="centered">Stationary Bike</div>
-                </a>
-            </div>
+                    </div>
+                </td>
+        </tr>
 
-            <div class="container">
-                <a href="Equipment_Pages/kettlebells.html">
-                    <img src="Images/Kettlebells.JPG">
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/kettlebells.html">
+                        <img src="Images/Kettlebells.JPG" height=230 width=250>
+                    </a>
                     <div class="centered">Kettlebells</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/lat_pulldown.html">
-                    <img src="Images/Lat_Pulldown.jpg">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/lat_pulldown.html">
+                        <img src="Images/Lat_Pulldown.jpg" height=285 width=250>
+                    </a>
                     <div class="centered">Lat Pulldown</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/leg_extension(calves).html">
-                    <img src="Images/Leg_extension(calves).JPG">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/leg_extension(calves).html">
+                        <img src="Images/Leg_extension(calves).JPG" height=300 width=250>
+                    </a>
                     <div class="centered">Leg Extension (Calves)</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/leg_extension(thighs+calves).html">
-                    <img src="Images/leg_extension(thighs+calves).jpg">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/leg_extension(thighs+calves).html">
+                        <img src="Images/leg_extension(thighs+calves).jpg" height=300 width=250>
+                    </a>
                     <div class="centered">Leg Extension (Thighs and Calves)</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/leg_press.html">
-                    <img src="Images/leg_press.JPG">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/leg_press.html">
+                        <img src="Images/leg_press.JPG" height=295 width=250>
+                    </a>
                     <div class="centered">Leg Press</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/lowback+abdominal.html">
-                    <img src="Images/lowback+abdominal.jpg">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/lowback+abdominal.html">
+                        <img src="Images/lowback+abdominal.jpg" height=285 width=250>
+                    </a>
                     <div class="centered">Lowback and Abdominal Machine</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/medicine_balls.html">
-                    <img src="Images/medicine_balls.jpg">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/medicine_balls.html">
+                        <img src="Images/medicine_balls.jpg" height=300 width=250>
+                    </a>
                     <div class="centered">Medicine Balls</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/pectoral_fly+rear_deltoid.html">
-                    <img src="Images/pectoral_fly+rear_deltoid.jpg">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/pectoral_fly+rear_deltoid.html">
+                        <img src="Images/pectoral_fly+rear_deltoid.jpg" height=285 width=250>
+                    </a>
                     <div class="centered">Pectoral Fly and Rear Deltoid Machine</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/resistance_bands+jump_ropes.html">
-                    <img src="Images/resistance_bands+jump_ropes.JPG">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/resistance_bands+jump_ropes.html">
+                        <img src="Images/resistance_bands+jump_ropes.JPG" height=275 width=250>
+                    </a>
                     <div class="centered">Resistance Bands and Jump Ropes</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/rowing_machine.html">
-                    <img src="Images/rowing_machine.jpg">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/rowing_machine.html">
+                        <img src="Images/rowing_machine.jpg" height=275 width=250>
+                    </a>
                     <div class="centered">Rowing Machine</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/shoulder_press.html">
-                    <img src="Images/shoulder_press.jpg">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/shoulder_press.html">
+                        <img src="Images/shoulder_press.jpg" height=285 width=250>
+                    </a>
                     <div class="centered">Shoulder Press</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/treadmill.html">
-                    <img src="Images/treadmill.jpg">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/treadmill.html">
+                        <img src="Images/treadmill.jpg" height=285 width=250>
+                    </a>
                     <div class="centered">Treadmill</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/sleds.html">
-                    <img src="Images/sleds.jpg">
+                    </div>
+                </td>
+        </tr >
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/sleds.html">
+                        <img src="Images/sleds.jpg" height=300 width=250>
+                    </a>
                     <div class="centered">Sleds</div>
-                </a>
-            </div>
-
-            <div class="container">
-                <a href="Equipment_Pages/ropes.html">
-                    <img src="Images/ropes.JPG">
+                    </div>
+                </td>
+        </tr>
+        <tr class="container">
+                <td>
+                   <div class="container">
+                    <a href="Equipment_Pages/ropes.html">
+                        <img src="Images/ropes.JPG" height=255 width=250>
+                    </a>
                     <div class="centered">Battle Ropes</div>
-                </a>
-            </div>
-        </div>
-    </main>
-</body>
+                    </div>
+                </td>
+        </tr>
 
+    </table>
+
+        
+    </body>
+</center>
+    
 </html>
