@@ -2,6 +2,35 @@ h1 {
  text-align:center;
 }
 
+nav.dropdown {
+  padding-top: 1ex;
+  padding-bottom: 1ex;
+  font-size: 16px;
+  width: 35em;
+  margin: 1.5em;
+  display: inline-block;
+  position: relative;
+  box-sizing:border-box;
+}
+
+nav.dropdown .dropdown-content {
+  box-sizing:border-box;
+  position:absolute;
+  margin-top:1ex;
+  display: none;
+  min-width: 10em;
+  width: 100%;
+  z-index: 1;
+}
+nav.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav.dropdown .dropdown-content a {
+  padding: 0.7ex 1ex;
+  display: block;
+}
+
 *{
     text-align: center;
     margin-left: auto;
