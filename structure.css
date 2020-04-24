@@ -3,8 +3,9 @@
   --equipment-font-size: 18pt;
   --content-width: 90%;
   --main-break: 1.5ex;
+  --max-container-size: 270px;
   --normal-container-size: 25vw;
-  --min-container-size: 9em;
+  --min-container-size: 250px;
 }
 * {
     text-align: center;
@@ -83,13 +84,13 @@ main img{
 
 .container{
     display: flex;
-    width: var(--normal-container-size);
-    height: var(--normal-container-size);
-    min-width: var(--min-container-size);
-    min-height: var(--min-container-size);
+  
+    width: min(var(--max-container-size),max(var(--min-container-size),var(--normal-container-size)));
+    height: min(var(--max-container-size),max(var(--min-container-size),var(--normal-container-size)));
+   
     position: relative;
     font-size: max(4vw,var(--main-font-size));
-    margin:  2.5vw;
+    margin:  1vw;
     margin-left: auto;
     margin-right: auto;
 }
