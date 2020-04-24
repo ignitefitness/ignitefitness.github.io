@@ -1,5 +1,21 @@
+:root{
+  --main-color: darkorange;
+  --main-color-border: black;
+  --main-color-font: white;
+  --main-color-selected: #89C040;
+
+  --backgound-color-font: black;
+  --backgound-color: white;
+  --backgound-color-selected: #f1f1f1;
+
+  --transition-time: 0.3s;
+}
+body {
+  background-color: var(--backgound-color);
+  color: var(--backgound-color-font);
+}
+
 h1::before,h1::after{
-    opacity: 1;
     background-image: url("Images/ignitelogo.jpeg");
     background-repeat: no-repeat;    
     padding: 10vw;
@@ -15,21 +31,21 @@ h1::after{
 
 nav.dropdown:hover,nav.dropdown{
   transition-property: background-color;
-  transition-duration: 0.5s;
+  transition-duration: var(--transition-time);
 }
 nav.dropdown {
-  background-color: darkorange;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--main-color-font);
 }
 nav.dropdown:hover {
-  background-color: #89C040;
+  background-color: var(--main-color-selected);
 }
 
 nav.dropdown:hover::after,nav::after{
   content: "▼";
   display: inline-block;
   transition-property: transform;
-  transition-duration: 0.5s;
+  transition-duration: var(--transition-time);
 }
 nav.dropdown:hover::after{
   transform: rotate(0deg);
@@ -39,36 +55,29 @@ nav.dropdown::after{
 }
 
 nav.dropdown .dropdown-content {
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
 }
 
 nav.dropdown .dropdown-content a {
-  color: black;
+  background-color: var(--backgound-color);
+  color: var(--backgound-color-font);
   text-decoration: none;
 }
 
 nav.dropdown .dropdown-content a:hover {
-  background-color: #f1f1f1
+  background-color: var(--backgound-color-selected);
 }
 
+.container a{
+  color: var(--main-color);
+  text-shadow: -1px 0 var(--main-color-border), 0 1px var(--main-color-border), 1px 0 var(--main-color-border), 0 -1px var(--main-color-border);
 
-#main_table table{
-    width: 250px;
-    height: 250px;
+  filter: brightness(100%);
+  transition-property: filter;
+  transition-duration: var(--transition-time);
 }
-
-.centered{
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    
-}
-.container{
-    position: relative;
-    text-align: center;
-    color: darkorange;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 140%;
+.container a:hover{
+  filter: brightness(130%);
+  transition-property: filter;
+  transition-duration: var(--transition-time);
 }
