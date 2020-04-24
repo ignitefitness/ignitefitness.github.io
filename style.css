@@ -1,3 +1,19 @@
+h1::before,h1::after{
+    opacity: 1;
+    background-image: url("Images/ignitelogo.jpeg");
+    background-repeat: no-repeat;    
+    padding: 10vw;
+    content: "\00a0";
+}
+h1::before{   
+    background-position: center right;
+}
+
+h1::after{
+    background-position: center left;
+}
+
+
 .dropbtn {
   background-color: darkorange;
   color: white;

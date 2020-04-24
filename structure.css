@@ -1,10 +1,6 @@
 h1 {
  text-align:center;
 }
-.h1logo {
-    width: 10vw;
-    opacity: 1;
-}
 
 *{
     text-align: center;
@@ -15,9 +11,9 @@ main {
     margin-top: 2em;
 }
 
-main ul,ol {
+main ul,ol * {
     text-align: left;
 }
 main img{
-    width: 300px;
+    width: 35em;
 }
