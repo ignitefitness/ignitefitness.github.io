@@ -14,11 +14,13 @@ body {
   background-color: var(--backgound-color);
   color: var(--backgound-color-font);
 }
-
 h1::before,h1::after{
+    display: inline-block;
     background-image: url("Images/ignitelogo.jpeg");
-    background-repeat: no-repeat;    
-    padding: 10vw;
+    background-repeat: no-repeat;   
+    background-size: 100%;
+    width: 10vw;
+    padding: 2.5vw;
     content: "\00a0";
 }
 h1::before{   

@@ -1,8 +1,10 @@
 :root{
   --main-font-size: 12pt;
   --equipment-font-size: 18pt;
-  --content-width: 35em;
+  --content-width: 90%;
   --main-break: 1.5ex;
+  --normal-container-size: 25vw;
+  --min-container-size: 9em;
 }
 * {
     text-align: center;
@@ -14,11 +16,17 @@ h1 {
  text-align:center;
 }
 
+@media (width < 335px){
+  h1 {
+    font-size: 8vw;
+  }
+}
+
 nav.dropdown {
   padding-top: 1ex;
   padding-bottom: 1ex;
   font-size: var(--main-font-size);
-  width: var(--content-width);
+  width: calc(var(--content-width) - 3em);
   margin: 1.5em;
   display: inline-block;
   position: relative;
@@ -30,7 +38,6 @@ nav.dropdown .dropdown-content {
   position:absolute;
   margin-top:1ex;
   display: none;
-  min-width: 10em;
   width: 100%;
 }
 nav.dropdown:hover .dropdown-content {
@@ -55,7 +62,10 @@ main ul,ol * {
     text-align: left;
 }
 main img{
-    width: var(--content-width);
+  box-sizing: border-box;
+  width: var(--content-width);
+  padding-left: 2.5ex;
+  padding-right: 2.5ex;
 }
 
 .equipment {
@@ -73,11 +83,15 @@ main img{
 
 .container{
     display: flex;
-    width: 25vw;
-    height: 25vw;
+    width: var(--normal-container-size);
+    height: var(--normal-container-size);
+    min-width: var(--min-container-size);
+    min-height: var(--min-container-size);
     position: relative;
-    font-size: 4vw;
+    font-size: max(4vw,var(--main-font-size));
     margin:  2.5vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container img{
