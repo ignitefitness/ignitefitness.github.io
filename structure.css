@@ -89,7 +89,7 @@ main img{
     height: min(var(--max-container-size),max(var(--min-container-size),var(--normal-container-size)));
    
     position: relative;
-    font-size: max(4vw,var(--main-font-size));
+    font-size: min(max(4vw,var(--main-font-size)),var(--equipment-font-size));
     margin:  1vw;
     margin-left: auto;
     margin-right: auto;
