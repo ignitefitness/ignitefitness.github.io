@@ -39,25 +39,11 @@
   background-color: #89C040;
 }
 
-.h1logo {
-    width: 50px;
-    opacity: 1;
-}
-
 #main_table table{
     width: 250px;
     height: 250px;
 }
 
-body {
-    text-align: center;
-}
-
-
-
-.list{
-    text-align: left;
-}
 .centered{
     position: absolute;
   top: 50%;

@@ -1,0 +1,23 @@
+h1 {
+ text-align:center;
+}
+.h1logo {
+    width: 10vw;
+    opacity: 1;
+}
+
+*{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+main {
+    margin-top: 2em;
+}
+
+main ul,ol {
+    text-align: left;
+}
+main img{
+    width: 300px;
+}
