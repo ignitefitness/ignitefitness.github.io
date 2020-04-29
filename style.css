@@ -83,3 +83,8 @@ nav.dropdown .dropdown-content a:hover {
   transition-property: filter;
   transition-duration: var(--transition-time);
 }
+p span.email{
+  background-color: white;
+  color: blue;
+  text-decoration: underline;
+}
